@@ -1,7 +1,7 @@
-<Workspace Version="1.3.1.1736" X="124.466626582702" Y="194.879373948345" zoom="0.666243521973657" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+<Workspace Version="1.3.1.1736" X="388.228544286945" Y="151.103758482408" zoom="0.644123623540423" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap />
   <Elements>
-    <Dynamo.Graph.Nodes.CustomNodes.Function guid="ef521354-dce2-441a-a887-c2c11fd6ce01" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Generate Web Page" x="1032.85605552547" y="273.111080815096" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="ef521354-dce2-441a-a887-c2c11fd6ce01" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Generate Web Page" x="804.506382521102" y="237.24464002907" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -31,10 +31,10 @@
         <Output value="RawHtml" />
       </Outputs>
     </Dynamo.Graph.Nodes.CustomNodes.Function>
-    <CoreNodeModels.Watch guid="47ed2bbf-1a53-49c6-bd10-a9627f88e7ee" type="CoreNodeModels.Watch" nickname="Watch" x="1448.14123046445" y="319.207653100635" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Watch guid="47ed2bbf-1a53-49c6-bd10-a9627f88e7ee" type="CoreNodeModels.Watch" nickname="Watch" x="1219.79155746008" y="283.341212314609" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <PythonNodeModels.PythonNode guid="c78dde96-dc77-49e3-9f75-27bf7b124693" type="PythonNodeModels.PythonNode" nickname="Python: Create HTML Table" x="311.475233209975" y="-26.606364041096" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+    <PythonNodeModels.PythonNode guid="c78dde96-dc77-49e3-9f75-27bf7b124693" type="PythonNodeModels.PythonNode" nickname="Python: Create HTML Table" x="-41.1812241651155" y="-69.5760496483066" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <Script>import clr
@@ -62,68 +62,68 @@ html += "&lt;/table&gt;\n"
 #Assign your output to the OUT variable.
 OUT = html</Script>
     </PythonNodeModels.PythonNode>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ca3d1b20-fb39-4c7d-bb22-b4dfbfa753a2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Query.SQLite_Query" x="-19.3062420963001" y="228.319395116485" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Query.SQLite_Query@string,bool,string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ca3d1b20-fb39-4c7d-bb22-b4dfbfa753a2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Query.SQLite_Query" x="-512.857229728724" y="90.4432209552321" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Query.SQLite_Query@string,bool,string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <CoreNodeModels.Input.StringInput guid="c022e454-7f62-4c0b-8dd6-da5e7a6d75d4" type="CoreNodeModels.Input.StringInput" nickname="String" x="-309.559384185341" y="333.065823389527" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="c022e454-7f62-4c0b-8dd6-da5e7a6d75d4" type="CoreNodeModels.Input.StringInput" nickname="String" x="-803.110371817765" y="195.189649228274" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>SELECT "Element Id", "Type", "Mark", "Level" FROM "Mechanical Equipment";</System.String>
       <System.String value="SELECT &quot;Element Id&quot;, &quot;Type&quot;, &quot;Mark&quot;, &quot;Level&quot; FROM &quot;Mechanical Equipment&quot;;" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.Input.Filename guid="e2e8434a-61bb-4a48-943e-cdbd1c48cc99" type="CoreNodeModels.Input.Filename" nickname="File Path" x="-378.658596982147" y="156.162055778804" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <System.String>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Mechanical.db</System.String>
+    <CoreNodeModels.Input.Filename guid="e2e8434a-61bb-4a48-943e-cdbd1c48cc99" type="CoreNodeModels.Input.Filename" nickname="File Path" x="-739.746946574379" y="19.610507997953" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>.\Mechanical.db</System.String>
       <HintPath>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Mechanical.db</HintPath>
     </CoreNodeModels.Input.Filename>
-    <CoreNodeModels.Input.BoolSelector guid="7879a70c-2273-45f9-8a09-a755743845ea" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="-246.108034776907" y="260.414373370588" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.BoolSelector guid="7879a70c-2273-45f9-8a09-a755743845ea" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="-739.659022409331" y="122.538199209335" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
-    <CoreNodeModels.Input.StringInput guid="3bbf2bba-eedf-488e-94d2-92b6ed6bb2da" type="CoreNodeModels.Input.StringInput" nickname="String: &lt;table&gt; classes" x="114.966071491232" y="-45.1834040032631" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="3bbf2bba-eedf-488e-94d2-92b6ed6bb2da" type="CoreNodeModels.Input.StringInput" nickname="String: &lt;table&gt; classes" x="-237.690385883858" y="-88.1530896104738" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>table table-striped</System.String>
       <System.String value="table table-striped" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.Input.Filename guid="409d25ec-e749-4289-a7d4-8e8ff56e6df2" type="CoreNodeModels.Input.Filename" nickname="File Path" x="1456.58201049459" y="119.382076996421" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.Filename guid="409d25ec-e749-4289-a7d4-8e8ff56e6df2" type="CoreNodeModels.Input.Filename" nickname="File Path" x="1228.23233749022" y="83.5156362103945" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>.\Test.html</System.String>
       <HintPath>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Test.html</HintPath>
     </CoreNodeModels.Input.Filename>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3139e9c8-9160-4dcf-84ff-ff2f715bc30f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="1582.61426254987" y="158.598023402223" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3139e9c8-9160-4dcf-84ff-ff2f715bc30f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="1354.2645895455" y="122.731582616197" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <CoreNodeModels.CreateList guid="8c2d531b-faf8-43cf-8949-c0547d5cbdf0" type="CoreNodeModels.CreateList" nickname="List.Create" x="280.488169778958" y="974.420593630916" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+    <CoreNodeModels.CreateList guid="8c2d531b-faf8-43cf-8949-c0547d5cbdf0" type="CoreNodeModels.CreateList" nickname="List.Create" x="376.812238728311" y="731.344895893325" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </CoreNodeModels.CreateList>
-    <CoreNodeModels.Input.StringInput guid="b90acf4c-aa61-4ca9-8ee8-c0afbb55b81d" type="CoreNodeModels.Input.StringInput" nickname="String" x="30.1983735619396" y="972.19894007961" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="b90acf4c-aa61-4ca9-8ee8-c0afbb55b81d" type="CoreNodeModels.Input.StringInput" nickname="String" x="126.522442511293" y="729.123242342019" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js</System.String>
       <System.String value="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.Input.StringInput guid="9dcb1b9c-9260-4d21-89f5-c7466ea15d93" type="CoreNodeModels.Input.StringInput" nickname="String" x="59.233369345186" y="1059.29387401227" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="9dcb1b9c-9260-4d21-89f5-c7466ea15d93" type="CoreNodeModels.Input.StringInput" nickname="String" x="155.557438294539" y="816.218176274679" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</System.String>
       <System.String value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.Input.StringInput guid="2f804e30-12c0-4efc-bed9-71cf37e6dc73" type="CoreNodeModels.Input.StringInput" nickname="String" x="28.404118799376" y="781.167868614261" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="2f804e30-12c0-4efc-bed9-71cf37e6dc73" type="CoreNodeModels.Input.StringInput" nickname="String" x="124.728187748729" y="538.09217087667" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</System.String>
       <System.String value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.CreateList guid="0ffec593-d2fa-4483-a5bc-89e7de5f5f00" type="CoreNodeModels.CreateList" nickname="List.Create" x="231.274679391842" y="782.176571607729" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
+    <CoreNodeModels.CreateList guid="0ffec593-d2fa-4483-a5bc-89e7de5f5f00" type="CoreNodeModels.CreateList" nickname="List.Create" x="327.598748341195" y="539.100873870138" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.CreateList>
-    <CoreNodeModels.Input.StringInput guid="486dce42-4484-4f39-9b5d-c4aae752d20f" type="CoreNodeModels.Input.StringInput" nickname="String" x="381.833795463842" y="-300.448979937805" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="486dce42-4484-4f39-9b5d-c4aae752d20f" type="CoreNodeModels.Input.StringInput" nickname="String" x="153.484122459474" y="-336.315420723831" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>&lt;h1&gt;List of Mechanical Equipment&lt;/h1&gt;</System.String>
       <System.String value="&lt;h1&gt;List of Mechanical Equipment&lt;/h1&gt;" />
     </CoreNodeModels.Input.StringInput>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction guid="af3ff45e-30ea-4712-a1be-f020f57d6d12" type="Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction" nickname="String.Join" x="610.710066847801" y="-329.080233225459" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.String.Join@string,string[]" inputcount="3">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction guid="af3ff45e-30ea-4712-a1be-f020f57d6d12" type="Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction" nickname="String.Join" x="382.360393843433" y="-364.946674011485" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.String.Join@string,string[]" inputcount="3">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction>
-    <CoreNodeModels.Input.StringInput guid="137c7b53-59c8-4b0a-9d36-be1a6fc97cf1" type="CoreNodeModels.Input.StringInput" nickname="String" x="478.562263762876" y="-375.970526818285" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="137c7b53-59c8-4b0a-9d36-be1a6fc97cf1" type="CoreNodeModels.Input.StringInput" nickname="String" x="250.212590758508" y="-411.836967604312" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>
 </System.String>
       <System.String value="&#xD;&#xA;" />
     </CoreNodeModels.Input.StringInput>
-    <CoreNodeModels.Input.StringInput guid="7e71c620-55ae-4f70-af97-d2d31f859315" type="CoreNodeModels.Input.StringInput" nickname="String" x="544.585132629065" y="360.02422444092" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.StringInput guid="7e71c620-55ae-4f70-af97-d2d31f859315" type="CoreNodeModels.Input.StringInput" nickname="String (embedded CSS or JS)" x="406.729938471836" y="964.956525761661" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>&lt;style&gt;
 .container-fixed {
 	max-width: 800px;
@@ -132,6 +132,22 @@ OUT = html</Script>
 &lt;/style&gt;</System.String>
       <System.String value="&lt;style&gt;&#xD;&#xA;.container-fixed {&#xD;&#xA;	max-width: 800px;&#xD;&#xA;	margin: 0 auto;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;" />
     </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f35cb996-d551-4817-bafc-80e66c86e6d4" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Query.SQLite_Query" x="-511.008347814869" y="444.557316178073" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Query.SQLite_Query@string,bool,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="089a543d-354a-4659-93ab-ccc7d2c4b943" type="CoreNodeModels.Input.StringInput" nickname="String" x="-801.26148990391" y="549.303744451115" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>SELECT * FROM "Mechanical Equipment";</System.String>
+      <System.String value="SELECT * FROM &quot;Mechanical Equipment&quot;;" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.Filename guid="7d35ab89-856a-493f-8baa-a8499da5ec66" type="CoreNodeModels.Input.Filename" nickname="File Path" x="-741.063609807239" y="376.225334618306" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>.\Mechanical.db</System.String>
+      <HintPath>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Mechanical.db</HintPath>
+    </CoreNodeModels.Input.Filename>
+    <CoreNodeModels.Input.BoolSelector guid="3a6dc7f3-9476-4702-bc02-7c4fbbd0bee9" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="-737.810140495476" y="476.652294432176" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="ef521354-dce2-441a-a887-c2c11fd6ce01" start_index="0" end="47ed2bbf-1a53-49c6-bd10-a9627f88e7ee" end_index="0" portType="0" />
@@ -152,33 +168,42 @@ OUT = html</Script>
     <Dynamo.Graph.Connectors.ConnectorModel start="af3ff45e-30ea-4712-a1be-f020f57d6d12" start_index="0" end="ef521354-dce2-441a-a887-c2c11fd6ce01" end_index="8" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="137c7b53-59c8-4b0a-9d36-be1a6fc97cf1" start_index="0" end="af3ff45e-30ea-4712-a1be-f020f57d6d12" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="7e71c620-55ae-4f70-af97-d2d31f859315" start_index="0" end="ef521354-dce2-441a-a887-c2c11fd6ce01" end_index="9" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="089a543d-354a-4659-93ab-ccc7d2c4b943" start_index="0" end="f35cb996-d551-4817-bafc-80e66c86e6d4" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7d35ab89-856a-493f-8baa-a8499da5ec66" start_index="0" end="f35cb996-d551-4817-bafc-80e66c86e6d4" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3a6dc7f3-9476-4702-bc02-7c4fbbd0bee9" start_index="0" end="f35cb996-d551-4817-bafc-80e66c86e6d4" end_index="1" portType="0" />
   </Connectors>
   <Notes />
   <Annotations>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="f08b6db8-2a88-4fa0-baee-393d1387137f" annotationText="Get table values" left="-388.658596982147" top="110.162055778804" width="582.352354885847" height="321.903767610723" fontSize="30" InitialTop="156.162055778804" InitialHeight="297.125672588053" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="b919b73a-de96-47d8-b004-978c1065f405" annotationText="Create HTML code for table" left="-247.690385883858" top="-134.153089610474" width="396.509161718742" height="183.577039962167" fontSize="30" InitialTop="-88.1530896104738" InitialHeight="167.577039962167" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="c78dde96-dc77-49e3-9f75-27bf7b124693" />
+      <Models ModelGuid="3bbf2bba-eedf-488e-94d2-92b6ed6bb2da" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="5804f915-0f27-4c6c-aba6-d21645113d50" annotationText="Set external javascript" left="116.522442511293" top="683.123242342019" width="390.289796217018" height="248.59493393266" fontSize="30" InitialTop="729.123242342019" InitialHeight="232.094933932658" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="8c2d531b-faf8-43cf-8949-c0547d5cbdf0" />
+      <Models ModelGuid="b90acf4c-aa61-4ca9-8ee8-c0afbb55b81d" />
+      <Models ModelGuid="9dcb1b9c-9260-4d21-89f5-c7466ea15d93" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="94195412-9d5d-434b-b03f-3a5419621082" annotationText="Set external CSS" left="114.728187748729" top="492.09217087667" width="342.870560592466" height="161.5" fontSize="30" InitialTop="538.09217087667" InitialHeight="145" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="2f804e30-12c0-4efc-bed9-71cf37e6dc73" />
+      <Models ModelGuid="0ffec593-d2fa-4483-a5bc-89e7de5f5f00" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="accd2f66-d6fe-42c7-9812-f07f06eb2437" annotationText="Write to external HTML file" left="794.506382521102" top="37.5156362103945" width="760.258207024398" height="623.825576104214" fontSize="30" InitialTop="83.5156362103945" InitialHeight="607.825576104214" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="ef521354-dce2-441a-a887-c2c11fd6ce01" />
+      <Models ModelGuid="47ed2bbf-1a53-49c6-bd10-a9627f88e7ee" />
+      <Models ModelGuid="409d25ec-e749-4289-a7d4-8e8ff56e6df2" />
+      <Models ModelGuid="3139e9c8-9160-4dcf-84ff-ff2f715bc30f" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="25361db3-ae81-4a85-b71f-f664c6dd0df5" annotationText="Get specific table values" left="-813.110371817765" top="-26.389492002047" width="513.253142089041" height="320.579141230321" fontSize="30" InitialTop="19.610507997953" InitialHeight="305.903767610723" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="ca3d1b20-fb39-4c7d-bb22-b4dfbfa753a2" />
       <Models ModelGuid="c022e454-7f62-4c0b-8dd6-da5e7a6d75d4" />
       <Models ModelGuid="e2e8434a-61bb-4a48-943e-cdbd1c48cc99" />
       <Models ModelGuid="7879a70c-2273-45f9-8a09-a755743845ea" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="b919b73a-de96-47d8-b004-978c1065f405" annotationText="Create HTML code for table" left="104.966071491232" top="-91.1834040032631" width="396.509161718743" height="183.577039962167" fontSize="30" InitialTop="-45.1834040032631" InitialHeight="167.577039962167" TextblockHeight="36" backgrouund="#FFC1D676">
-      <Models ModelGuid="c78dde96-dc77-49e3-9f75-27bf7b124693" />
-      <Models ModelGuid="3bbf2bba-eedf-488e-94d2-92b6ed6bb2da" />
-    </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="5804f915-0f27-4c6c-aba6-d21645113d50" annotationText="Set external javascript" left="20.1983735619396" top="926.19894007961" width="390.289796217018" height="248.59493393266" fontSize="30" InitialTop="972.19894007961" InitialHeight="232.094933932658" TextblockHeight="36" backgrouund="#FFC1D676">
-      <Models ModelGuid="8c2d531b-faf8-43cf-8949-c0547d5cbdf0" />
-      <Models ModelGuid="b90acf4c-aa61-4ca9-8ee8-c0afbb55b81d" />
-      <Models ModelGuid="9dcb1b9c-9260-4d21-89f5-c7466ea15d93" />
-    </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="94195412-9d5d-434b-b03f-3a5419621082" annotationText="Set external CSS" left="18.404118799376" top="735.167868614261" width="342.870560592466" height="161.5" fontSize="30" InitialTop="781.167868614261" InitialHeight="145" TextblockHeight="36" backgrouund="#FFC1D676">
-      <Models ModelGuid="2f804e30-12c0-4efc-bed9-71cf37e6dc73" />
-      <Models ModelGuid="0ffec593-d2fa-4483-a5bc-89e7de5f5f00" />
-    </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="accd2f66-d6fe-42c7-9812-f07f06eb2437" annotationText="Write to external HTML file" left="1022.85605552547" top="73.382076996421" width="760.2582070244" height="623.825576104214" fontSize="30" InitialTop="119.382076996421" InitialHeight="607.825576104214" TextblockHeight="36" backgrouund="#FFC1D676">
-      <Models ModelGuid="ef521354-dce2-441a-a887-c2c11fd6ce01" />
-      <Models ModelGuid="47ed2bbf-1a53-49c6-bd10-a9627f88e7ee" />
-      <Models ModelGuid="409d25ec-e749-4289-a7d4-8e8ff56e6df2" />
-      <Models ModelGuid="3139e9c8-9160-4dcf-84ff-ff2f715bc30f" />
+    <Dynamo.Graph.Annotations.AnnotationModel guid="e371d26b-6bd1-4fcc-bea0-3da6f8794bbf" annotationText="Get all table values" left="-811.26148990391" top="330.225334618306" width="513.253142089041" height="301.578409832809" fontSize="30" InitialTop="376.225334618306" InitialHeight="305.903767610723" TextblockHeight="36" backgrouund="#FF48B9FF">
+      <Models ModelGuid="f35cb996-d551-4817-bafc-80e66c86e6d4" />
+      <Models ModelGuid="089a543d-354a-4659-93ab-ccc7d2c4b943" />
+      <Models ModelGuid="7d35ab89-856a-493f-8baa-a8499da5ec66" />
+      <Models ModelGuid="3a6dc7f3-9476-4702-bc02-7c4fbbd0bee9" />
     </Dynamo.Graph.Annotations.AnnotationModel>
   </Annotations>
   <Presets />
