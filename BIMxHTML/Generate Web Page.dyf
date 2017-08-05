@@ -1,7 +1,8 @@
-<Workspace Version="1.3.1.1736" X="-558.039166432918" Y="-491.686437058176" zoom="0.636476181588604" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIM Extension">
+<Workspace Version="1.3.1.1736" X="-104.799316092159" Y="-312.554843607253" zoom="0.532855658740581" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIM Extension">
   <NamespaceResolutionMap>
     <ClassMap partialName="FilePath" resolvedName="DSCore.IO.FilePath" assemblyName="DSCoreNodes.dll" />
     <ClassMap partialName="File" resolvedName="DSCore.IO.File" assemblyName="DSCoreNodes.dll" />
+    <ClassMap partialName="Strings" resolvedName="Lists.Strings" assemblyName="LunchBox.dll" />
   </NamespaceResolutionMap>
   <Elements>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="97cae937-5bf1-4c0a-a4c1-0a03dd7835e9" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1257.60317980792" y="539.094743861162" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;!DOCTYPE &quot; + docType + &quot;&gt;&quot;;" ShouldFocus="false">
@@ -14,22 +15,22 @@
       <Symbol value="htmlLang : string = &quot;en&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
     <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="fc89d1dd-9172-44b7-8f52-eff9871c952a" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.221402709539" y="809.754183709497" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <Symbol value="pageTitle : string = &quot;Dynamo Web Page&quot;" />
+      <Symbol value="//The title of the web page&#xD;&#xA;pageTitle : string = &quot;Dynamo Web Page&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="0a327501-78df-446d-b69f-cb73b24c9acc" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.221402709539" y="867.092800295424" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="0a327501-78df-446d-b69f-cb73b24c9acc" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="486.622385754231" y="880.870190267505" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="metaCharSet : string = &quot;UTF-8&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="8f27213c-523c-4608-8d30-c9909353f6f9" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.221402709539" y="924.431416881351" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="8f27213c-523c-4608-8d30-c9909353f6f9" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="486.622385754231" y="938.208806853432" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="metaName : string = &quot;viewport&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="81b1bba8-24fe-489c-a19b-df8edd7b4725" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.221402709539" y="981.770033467277" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="81b1bba8-24fe-489c-a19b-df8edd7b4725" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="486.622385754231" y="995.547423439358" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="metaContent : string = &quot;width=device-width, initial-scale=1&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="c16c91dc-3d96-4aae-b6b5-9c07e62c123a" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.221402709539" y="1041.47106978723" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <Symbol value="stylesheetSrc : []" />
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="c16c91dc-3d96-4aae-b6b5-9c07e62c123a" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="486.622385754231" y="1055.24845975931" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//URL of external CSS stylesheet&#xD;&#xA;stylesheetSrc : string[] = None" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="937e80f7-6a03-4460-8343-851ca1d07d07" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="489.563391866074" y="1101.36936423032" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <Symbol value="javaScriptSrc : []" />
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="937e80f7-6a03-4460-8343-851ca1d07d07" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="487.167324044842" y="1122.3349576661" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//URL of external JavaScript file&#xD;&#xA;javaScriptSrc : string[] = None" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
     <Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction guid="92590230-3b1f-410b-85da-23ea27bdd5bc" type="Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction" nickname="String.Join" x="3048.87153965557" y="1245.72849908619" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.String.Join@string,string[]" inputcount="17">
       <PortInfo index="0" default="False" />
@@ -50,9 +51,9 @@
       <PortInfo index="15" default="False" />
       <PortInfo index="16" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="674e564c-c6af-49ff-9a66-bcbcfa9037c6" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2934.36018898493" y="1234.51526808159" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;\n&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="674e564c-c6af-49ff-9a66-bcbcfa9037c6" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2916.50915322103" y="1195.83802392648" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;\n&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="12dd9db5-07cd-4178-97d6-2651437f5c3d" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1257.60317980792" y="672.509757716373" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;head&gt;&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="e08ea918-44c5-48b2-921c-285181e44293" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1257.60317980792" y="605.802250788767" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;html lang=\&quot;&quot; + htmlLang + &quot;\&quot;&gt;&quot;;" ShouldFocus="false">
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="e08ea918-44c5-48b2-921c-285181e44293" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1257.60317980792" y="605.802250788767" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;html lang=\&quot;&quot; + htmlLang + &quot;\&quot;&gt;\n&quot;;" ShouldFocus="false">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.CodeBlockNodeModel>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="63ad9f51-4797-4602-b4f2-0531625ca945" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1257.60317980792" y="739.217264643978" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;title&gt;&quot; + pageTitle + &quot;&lt;/title&gt;&quot;;" ShouldFocus="false">
@@ -67,7 +68,7 @@
     </Dynamo.Graph.Nodes.CodeBlockNodeModel>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="d1220738-bd53-49ba-b370-24d9cc84bfaa" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1262.79685886749" y="1378.62909889499" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/head&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="9a7b4c5f-56c7-4ca2-9432-65090a14e14b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1267.24527154112" y="1746.74217656811" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/body&gt;&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="317007a6-9bb6-4cf2-b334-9c863fbba6d0" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1253.27885147519" y="1578.86818400696" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="317007a6-9bb6-4cf2-b334-9c863fbba6d0" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1263.8146716137" y="1587.18593674789" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="//The data for the web page. This should be formatted in HTML.&#xD;&#xA;content : string" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="ee4b916e-7d26-4b1b-a424-5a6f2c49c9ca" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1268.91984116427" y="1814.90918704624" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/html&gt;&quot;;" ShouldFocus="false" />
@@ -78,9 +79,8 @@
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="7851086a-cc08-453e-800b-8cb369b087d5" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1264.50027470381" y="1445.56733558902" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;body&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="7e020724-6c4d-4fb2-ba28-b601b198724e" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1261.43800361033" y="1518.31427398198" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;div class=\&quot;container-fixed\&quot;&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="85269137-aee5-407a-81c3-baa8ba47f7bd" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1265.41168370567" y="1680.07934360373" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/div&gt;&quot;;" ShouldFocus="false" />
-    <PythonNodeModels.PythonNode guid="4af30941-486e-44f4-8f86-127a7b76d994" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1346.70051421069" y="1138.47425615349" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+    <PythonNodeModels.PythonNode guid="4af30941-486e-44f4-8f86-127a7b76d994" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1346.70051421069" y="1138.47425615349" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
       <PortInfo index="0" default="False" />
-      <PortInfo index="1" default="False" />
       <Script>import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
@@ -90,14 +90,14 @@ listIn = IN[0]
 html = ""
 
 for index, i in enumerate(listIn):
-	html += "&lt;script src=\"" + listIn[index] + "\"&gt;&lt;/script&gt;\n"
+	if len(listIn) &gt; 0:
+		html += "&lt;script src=\"" + listIn[index] + "\"&gt;&lt;/script&gt;\n"
 
 #Assign your output to the OUT variable.
 OUT = html</Script>
     </PythonNodeModels.PythonNode>
-    <PythonNodeModels.PythonNode guid="af6d882d-1786-41a8-b4dc-3b0eae580978" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1345.08290814248" y="1049.26646250262" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+    <PythonNodeModels.PythonNode guid="af6d882d-1786-41a8-b4dc-3b0eae580978" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1345.08290814248" y="1049.26646250262" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
       <PortInfo index="0" default="False" />
-      <PortInfo index="1" default="False" />
       <Script>import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
@@ -107,14 +107,15 @@ listIn = IN[0]
 html = ""
 
 for index, i in enumerate(listIn):
-	html += "&lt;link href=\"" + listIn[index] + "\" rel=\"stylesheet\"&gt;\n"
+	if len(listIn) &gt; 0:
+		html += "&lt;link href=\"" + listIn[index] + "\" rel=\"stylesheet\"&gt;\n"
 
 
 #Assign your output to the OUT variable.
 OUT = html</Script>
     </PythonNodeModels.PythonNode>
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="4d518de5-451d-46e2-b9d3-719dab585271" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1265.59432904827" y="1308.73252230442" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <Symbol value="embeddedHeadCode : string = &quot;&quot;" />
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="4d518de5-451d-46e2-b9d3-719dab585271" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1265.03981219887" y="1305.95993805744" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//Embed any custom &lt;link&gt; or &lt;script&gt; code here&#xD;&#xA;embeddedHeadCode : string = &quot;&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
   </Elements>
   <Connectors>
