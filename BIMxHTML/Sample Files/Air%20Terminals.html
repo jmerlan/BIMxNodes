@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Dynamo Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Air Terminals');
+data.addColumn('number', 'Slices');
+data.addRows([['PAR AA-12_24x24 - CRGT', 4],
+['PAR AA-10_24x24', 6],
+['Louver', 1],
+['PCS AA-10_24x24 - 4-WAY', 1],
+['PCS AA-06_12x12', 2],
+['PCS AA-14_24x24', 6],
+['PCS AA-12_24x24', 12],
+['DSR', 8],
+['PCS AA-06_24x24', 1],
+['PCS AA-08_12x12', 25],
+['TMRA-16', 24],
+['TMRA-14', 2],
+['PAR AA-06_12x12', 3]
+]);
+var options = {'title':'Air Terminals','width':800, 'height':800};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div')); chart.draw(data, options); }</script>
+<style>
+</style>
+</head>
+<body>
+<div class="container-fixed">
+<div id="chart_div" class="chart"></div>
+</div>
+</body>
+</html>
