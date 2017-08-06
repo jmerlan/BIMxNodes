@@ -1,4 +1,4 @@
-<Workspace Version="1.3.1.1736" X="151.381661416572" Y="-156.060195266011" zoom="0.91556228528123" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+<Workspace Version="1.3.1.1736" X="212.170166616371" Y="-195.610412680753" zoom="0.89416808331208" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
   <NamespaceResolutionMap />
   <Elements>
     <Dynamo.Graph.Nodes.CustomNodes.Function guid="03b80acc-36bb-4c89-a922-bccf0f2c8046" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Bootstrap Row - 4-4-4" x="84.8961068347464" y="772.053023254522" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
@@ -91,6 +91,22 @@
       <System.String>&lt;h3&gt;This is the right column&lt;/h3&gt;</System.String>
       <System.String value="&lt;h3&gt;This is the right column&lt;/h3&gt;" />
     </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="798fcef1-f968-492a-8be0-6a3c95d77dcd" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Bootstrap Row - 4-4-4" x="614.673504317194" y="665.592990425974" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <ID value="5f97c7fa-1885-490d-9bc0-ce409bd1421d" />
+      <Name value="Bootstrap Row - 4-4-4" />
+      <Description value="Generate a row of equal columns for a Bootstrap page." />
+      <Inputs>
+        <Input value="leftColumn" />
+        <Input value="middleColumn" />
+        <Input value="rightColumn" />
+      </Inputs>
+      <Outputs>
+        <Output value="Html" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="03b80acc-36bb-4c89-a922-bccf0f2c8046" start_index="0" end="dd8e8c62-e667-48d7-a2e7-3ac1569e89e9" end_index="8" portType="0" />
