@@ -11,11 +11,23 @@
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-
+<style>
+iframe {
+min-height: 700px;
+width: 100%;
+border: 0;
+}
+</style>
 </head>
-<body>
-<div class="container-fixed">
-<div class="row"><div class="col-sm-4"><iframe src ="./Ducts.html"></iframe></div><div class="col-sm-4"><h3>This is the middle column</h3></div><div class="col-sm-4"><h3>This is the right column</h3></div></div>
+
+<div class="container">
+<h1>Dashboard</h1>
+<div class="row"><div class="col-sm-6"><div class="panel panel-default">
+<div class="panel-body">
+<iframe src ="./Ducts.html" scrolling="no">
+</iframe>
+</div>
+</div></div><div class="col-sm-6"><iframe src ="./Air Terminals.html" scrolling="no"></iframe></div></div>
 </div>
 </body>
 </html>

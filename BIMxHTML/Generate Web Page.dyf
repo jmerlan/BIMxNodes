@@ -1,4 +1,4 @@
-<Workspace Version="1.3.1.1736" X="-104.799316092159" Y="-312.554843607253" zoom="0.532855658740581" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIM Extension">
+<Workspace Version="1.3.1.1736" X="-763.273951586716" Y="-459.320401711273" zoom="0.606456406192834" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIMxHTML">
   <NamespaceResolutionMap>
     <ClassMap partialName="FilePath" resolvedName="DSCore.IO.FilePath" assemblyName="DSCoreNodes.dll" />
     <ClassMap partialName="File" resolvedName="DSCore.IO.File" assemblyName="DSCoreNodes.dll" />
@@ -68,9 +68,6 @@
     </Dynamo.Graph.Nodes.CodeBlockNodeModel>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="d1220738-bd53-49ba-b370-24d9cc84bfaa" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1262.79685886749" y="1378.62909889499" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/head&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="9a7b4c5f-56c7-4ca2-9432-65090a14e14b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1267.24527154112" y="1746.74217656811" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/body&gt;&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="317007a6-9bb6-4cf2-b334-9c863fbba6d0" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1263.8146716137" y="1587.18593674789" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <Symbol value="//The data for the web page. This should be formatted in HTML.&#xD;&#xA;content : string" />
-    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="ee4b916e-7d26-4b1b-a424-5a6f2c49c9ca" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1268.91984116427" y="1814.90918704624" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/html&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CustomNodes.Output guid="2f4451bd-d980-47ff-9497-57b75f764ff8" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="3301.35107408387" y="1247.2329965609" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
@@ -117,6 +114,10 @@ OUT = html</Script>
     <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="4d518de5-451d-46e2-b9d3-719dab585271" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1265.03981219887" y="1305.95993805744" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="//Embed any custom &lt;link&gt; or &lt;script&gt; code here&#xD;&#xA;embeddedHeadCode : string = &quot;&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="b87f9109-5097-4b0e-937b-8b565f65f418" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2415" y="1148" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="81dd9ea0-fb36-43f8-aa0c-edff7b9afae3" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1261.58985943582" y="1589.20818537948" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//The data for the web page. This should be formatted in HTML.&#xD;&#xA;content : string" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="97cae937-5bf1-4c0a-a4c1-0a03dd7835e9" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="1" portType="0" />
@@ -137,7 +138,6 @@ OUT = html</Script>
     <Dynamo.Graph.Connectors.ConnectorModel start="4f56ae77-41b7-4f90-91f4-ecca33899923" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="6" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="d1220738-bd53-49ba-b370-24d9cc84bfaa" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="10" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="9a7b4c5f-56c7-4ca2-9432-65090a14e14b" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="15" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="317007a6-9bb6-4cf2-b334-9c863fbba6d0" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="13" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="ee4b916e-7d26-4b1b-a424-5a6f2c49c9ca" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="16" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="7851086a-cc08-453e-800b-8cb369b087d5" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="11" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="7e020724-6c4d-4fb2-ba28-b601b198724e" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="12" portType="0" />
@@ -145,6 +145,7 @@ OUT = html</Script>
     <Dynamo.Graph.Connectors.ConnectorModel start="4af30941-486e-44f4-8f86-127a7b76d994" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="8" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="af6d882d-1786-41a8-b4dc-3b0eae580978" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="7" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="4d518de5-451d-46e2-b9d3-719dab585271" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="9" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="81dd9ea0-fb36-43f8-aa0c-edff7b9afae3" start_index="0" end="92590230-3b1f-410b-85da-23ea27bdd5bc" end_index="13" portType="0" />
   </Connectors>
   <Notes />
   <Annotations />
