@@ -1,4 +1,4 @@
-<Workspace Version="1.3.1.1736" X="-763.273951586716" Y="-459.320401711273" zoom="0.606456406192834" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIMxHTML">
+<Workspace Version="1.3.1.1736" X="-273.056092330694" Y="-222.986294185694" zoom="0.581065249917408" ScaleFactor="1" Name="Generate Web Page" Description="Creates a static web page from a string formatted as HTML." ID="1ff8e413-b47c-4fdb-903b-7823f193780b" Category="BIMxHTML">
   <NamespaceResolutionMap>
     <ClassMap partialName="FilePath" resolvedName="DSCore.IO.FilePath" assemblyName="DSCoreNodes.dll" />
     <ClassMap partialName="File" resolvedName="DSCore.IO.File" assemblyName="DSCoreNodes.dll" />
@@ -71,7 +71,7 @@
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="ee4b916e-7d26-4b1b-a424-5a6f2c49c9ca" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1268.91984116427" y="1814.90918704624" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;/html&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CustomNodes.Output guid="2f4451bd-d980-47ff-9497-57b75f764ff8" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="3301.35107408387" y="1247.2329965609" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
-      <Symbol value="//The HTML output to be written to a file&#xD;&#xA;RawHtml" />
+      <Symbol value="//The HTML output to be written to a file&#xD;&#xA;RawHtml : string" />
     </Dynamo.Graph.Nodes.CustomNodes.Output>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="7851086a-cc08-453e-800b-8cb369b087d5" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1264.50027470381" y="1445.56733558902" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;body&gt;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="7e020724-6c4d-4fb2-ba28-b601b198724e" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1261.43800361033" y="1518.31427398198" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&lt;div class=\&quot;container-fixed\&quot;&gt;&quot;;" ShouldFocus="false" />
@@ -114,7 +114,6 @@ OUT = html</Script>
     <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="4d518de5-451d-46e2-b9d3-719dab585271" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1265.03981219887" y="1305.95993805744" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="//Embed any custom &lt;link&gt; or &lt;script&gt; code here&#xD;&#xA;embeddedHeadCode : string = &quot;&quot;" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="b87f9109-5097-4b0e-937b-8b565f65f418" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2415" y="1148" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="81dd9ea0-fb36-43f8-aa0c-edff7b9afae3" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1261.58985943582" y="1589.20818537948" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <Symbol value="//The data for the web page. This should be formatted in HTML.&#xD;&#xA;content : string" />
     </Dynamo.Graph.Nodes.CustomNodes.Symbol>
