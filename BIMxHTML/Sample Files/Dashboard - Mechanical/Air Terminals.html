@@ -14,9 +14,11 @@
 <script src="https://www.google.com/jsapi?ext.js"></script>
 
 <script type="text/javascript">
-google.load("visualization", "1", {
-    packages: ["corechart"]
-});
+
+google.charts.load('current', {'packages':['bar']});
+
+google.charts.setOnLoadCallback(drawChart);
+
 google.setOnLoadCallback(initChart);
 
 $(window).on("throttledresize", function (event) {
@@ -28,7 +30,7 @@ $(window).on("throttledresize", function (event) {
 
 function initChart() {
     var options = {width: '100%', height: '100%', legend: {position: 'bottom'}, pieSliceText: 'percentage', chartArea: {left: '3%',top: '3%', height: '94%', width: '94%'}    };
-var data = google.visualization.arrayToDataTable([['Key','Value'],
+var data = google.visualization.arrayToDataTable([['Family Type','Quantity'],
 ['PAR AA-12_24x24 - CRGT',4],
 ['PAR AA-10_24x24',6],
 ['Louver',1],
@@ -47,8 +49,11 @@ var data = google.visualization.arrayToDataTable([['Key','Value'],
 }
 
 function drawChart(data, options) {
-    var chart = new google.visualization.PieChart(document.getElementById('chart'));
-    chart.draw(data, options);
+
+var chart = new google.charts.Bar(document.getElementById('chart'));
+
+chart.draw(data, google.charts.Bar.convertOptions(options));
+
 }
 </script>
 <style>
