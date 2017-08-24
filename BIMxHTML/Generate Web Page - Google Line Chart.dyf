@@ -1,0 +1,229 @@
+<Workspace Version="1.3.1.1736" X="-2310.14373524666" Y="-2931.79696650081" zoom="0.984461059411266" ScaleFactor="1" Name="Generate Web Page - Google Line Chart" Description="Generates HTML code for web page to display a Google Line Chart." ID="16bf3560-1818-4ae2-b982-54598767ebf8" Category="BIMxHTML">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="9edfb0b5-d85c-4254-aa4f-2ed324387977" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="3777.74029887742" y="1438.21015611436" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <Symbol value="//HTML output to be written to a file&#xD;&#xA;html : string" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="7aebc970-47ab-402f-901c-9f621b4b0767" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Generate Web Page" x="3394.06965049406" y="1440.11453038384" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+      <PortInfo index="4" default="True" />
+      <PortInfo index="5" default="True" />
+      <PortInfo index="6" default="True" />
+      <PortInfo index="7" default="True" />
+      <PortInfo index="8" default="True" />
+      <PortInfo index="9" default="False" />
+      <ID value="1ff8e413-b47c-4fdb-903b-7823f193780b" />
+      <Name value="Generate Web Page" />
+      <Description value="Creates a static web page from a string formatted as HTML." />
+      <Inputs>
+        <Input value="docType" />
+        <Input value="htmlLang" />
+        <Input value="pageTitle" />
+        <Input value="metaCharSet" />
+        <Input value="metaName" />
+        <Input value="metaContent" />
+        <Input value="stylesheetSrc" />
+        <Input value="javaScriptSrc" />
+        <Input value="embeddedHeadCode" />
+        <Input value="content" />
+      </Inputs>
+      <Outputs>
+        <Output value="RawHtml" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.CreateList guid="b7894b26-2a80-4da6-bdd6-def7279f2097" type="CoreNodeModels.CreateList" nickname="List.Create" x="2984.74850669018" y="1366.92176383432" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.CreateList>
+    <CoreNodeModels.CreateList guid="d0c6e792-6c24-4c03-844f-23ac008793b7" type="CoreNodeModels.CreateList" nickname="List.Create" x="2982.03901486389" y="1639.44708024575" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="5">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="False" />
+    </CoreNodeModels.CreateList>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction guid="bed8de9f-76cd-4d57-b15e-37ce4c3e97f9" type="Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction" nickname="String.Concat" x="3055.85676356086" y="2036.22565017825" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.String.Concat@string[]" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction>
+    <CoreNodeModels.Input.StringInput guid="be1785da-5508-4c02-b9bc-c047d0a33357" type="CoreNodeModels.Input.StringInput" nickname="String" x="2742.73205308411" y="1362.13996271905" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</System.String>
+      <System.String value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="c76841ee-5c69-457b-9b4e-400b032be590" type="CoreNodeModels.Input.StringInput" nickname="String" x="2549.43669432494" y="1529.63960288104" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js</System.String>
+      <System.String value="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="0160f66e-cb9f-4e1e-9f03-5f51be72912b" type="CoreNodeModels.Input.StringInput" nickname="String" x="2578.47169010818" y="1616.7345368137" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</System.String>
+      <System.String value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="d1412a82-c0c1-4842-9341-ac99d5464f96" type="CoreNodeModels.Input.StringInput" nickname="String" x="2560.05091662526" y="1732.66242289508" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://www.gstatic.com/charts/loader.js</System.String>
+      <System.String value="https://www.gstatic.com/charts/loader.js" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="e593272b-ce75-4a52-b3f3-052b672e3a9a" type="CoreNodeModels.Input.StringInput" nickname="String" x="2560.89768953028" y="1817.12439359675" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://rawgit.com/louisremi/jquery-smartresize/master/jquery.throttledresize.js</System.String>
+      <System.String value="https://rawgit.com/louisremi/jquery-smartresize/master/jquery.throttledresize.js" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="84673a26-1cd1-4179-9fef-0e27614df4a2" type="CoreNodeModels.Input.StringInput" nickname="String" x="2564.60653831186" y="1926.09609325549" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>https://www.google.com/jsapi?ext.js</System.String>
+      <System.String value="https://www.google.com/jsapi?ext.js" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="b065dd0e-f8fc-4923-9a02-8f7eafb7cf69" type="CoreNodeModels.Input.StringInput" nickname="String" x="3378.82725384561" y="2171.44953878163" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>&lt;div id="chart_wrap"&gt;&lt;div id="chart"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p id="canvas_size"&gt;&lt;/p&gt;</System.String>
+      <System.String value="&lt;div id=&quot;chart_wrap&quot;&gt;&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#xD;&#xA;&lt;p id=&quot;canvas_size&quot;&gt;&lt;/p&gt;" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction guid="83492656-6f38-48ea-b466-70bb35a34e7a" type="Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction" nickname="String.Concat" x="2468.61005605082" y="2125.19604181211" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.String.Concat@string[]" inputcount="7">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="False" />
+      <PortInfo index="5" default="False" />
+      <PortInfo index="6" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction>
+    <CoreNodeModels.Input.StringInput guid="b4e127cf-d971-43a3-9130-3394b163d540" type="CoreNodeModels.Input.StringInput" nickname="String" x="3032.21715780232" y="2284.16296819218" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>
+&lt;style&gt;
+#chart_wrap {
+    position: relative;
+    padding-bottom: 100%;
+    overflow:hidden;
+}
+#chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+&lt;/style&gt;</System.String>
+      <System.String value="&#xD;&#xA;&lt;style&gt;&#xD;&#xA;#chart_wrap {&#xD;&#xA;    position: relative;&#xD;&#xA;    padding-bottom: 100%;&#xD;&#xA;    overflow:hidden;&#xD;&#xA;}&#xD;&#xA;#chart {&#xD;&#xA;    position: absolute;&#xD;&#xA;    top: 0;&#xD;&#xA;    left: 0;&#xD;&#xA;    width:100%;&#xD;&#xA;    height:100%;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Watch guid="cc159653-f763-4e24-8d64-058fd478f835" type="CoreNodeModels.Watch" nickname="Watch" x="2695.14299261578" y="2303.02020787802" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.StringInput guid="7407670b-364f-4665-933c-9b5b43654d3d" type="CoreNodeModels.Input.StringInput" nickname="String" x="1924.23824218041" y="2443.65303978578" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>    };</System.String>
+      <System.String value="    };" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="8c020dd9-d24b-4a99-84b6-d2c298647738" type="CoreNodeModels.Input.StringInput" nickname="String" x="1704.16931888052" y="1836.35374980325" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>&lt;script type="text/javascript"&gt;
+google.load("visualization", "1", {
+    packages: ["corechart"]
+});
+google.setOnLoadCallback(initChart);
+
+$(window).on("throttledresize", function (event) {
+    initChart();
+});
+
+
+
+
+</System.String>
+      <System.String value="&lt;script type=&quot;text/javascript&quot;&gt;&#xD;&#xA;google.load(&quot;visualization&quot;, &quot;1&quot;, {&#xD;&#xA;    packages: [&quot;corechart&quot;]&#xD;&#xA;});&#xD;&#xA;google.setOnLoadCallback(initChart);&#xD;&#xA;&#xD;&#xA;$(window).on(&quot;throttledresize&quot;, function (event) {&#xD;&#xA;    initChart();&#xD;&#xA;});&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="2811c57f-5721-4129-abc4-439ef2620af0" type="CoreNodeModels.Input.StringInput" nickname="String" x="1767.61844817499" y="2514.28979589941" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>
+var data = google.visualization.arrayToDataTable([</System.String>
+      <System.String value="&#xD;&#xA;var data = google.visualization.arrayToDataTable([" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="295fe101-5947-49b1-9a5f-f4849e3d4b0d" type="CoreNodeModels.Input.StringInput" nickname="String" x="1703.96544896147" y="2144.31751975696" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>function initChart() {
+    var options = {</System.String>
+      <System.String value="function initChart() {&#xD;&#xA;    var options = {" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="785c9e5e-c480-4536-abcf-52a4237b3407" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="990.261090516279" y="2334.81087579402" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//Additional options. Refer to Google Charts documentation&#xD;&#xA;options : string = &quot;width: '100%', height: '100%', legend: {position: 'bottom'}, pieSliceText: 'percentage', chartArea: {left: '3%',top: '3%', height: '94%', width: '94%'}&quot;" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <CoreNodeModels.Watch guid="f65b5b6c-45e0-4f69-8cc4-53d998a0f2f9" type="CoreNodeModels.Watch" nickname="Watch" x="1766.48595103392" y="2747.71825945112" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <PythonNodeModels.PythonNode guid="cb0b008b-ed5c-4577-9fbd-2debc15a9ca4" type="PythonNodeModels.PythonNode" nickname="Python: Add JS rows" x="1591.28725066577" y="2737.97912517874" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
+      <PortInfo index="0" default="False" />
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+#The inputs to this node will be stored as a list in the IN variables.
+dictIn = IN[0]
+
+javaScript = "['Key','Value'],\n"
+
+for index, i in enumerate(dictIn):
+	#javaScript += "\t'" + str(dictIn[index]) + "',\n"
+	javaScript += "['" + dictIn[index][0] + "'," + dictIn[index][1] + "],\n"
+javaScript = javaScript[:-2]
+#Assign your output to the OUT variable.
+OUT = javaScript</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="a583279b-24b2-4a6b-b784-95214066c445" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="1085.31387179041" y="2732.53916937367" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <Symbol value="//List of sublists containing key, value pairs&#xD;&#xA;items : string[][]" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <CoreNodeModels.Input.StringInput guid="a25f9074-93d0-4c48-b4d2-ab85122936c5" type="CoreNodeModels.Input.StringInput" nickname="String" x="2108.39478221463" y="2888.79489794653" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>
+    ]);
+    drawChart(data, options)
+}
+
+function drawChart(data, options) {
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(data, options);
+}
+&lt;/script&gt;</System.String>
+      <System.String value="&#xD;&#xA;    ]);&#xD;&#xA;    drawChart(data, options)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;function drawChart(data, options) {&#xD;&#xA;    var chart = new google.visualization.PieChart(document.getElementById('chart'));&#xD;&#xA;    chart.draw(data, options);&#xD;&#xA;}&#xD;&#xA;&lt;/script&gt;" />
+    </CoreNodeModels.Input.StringInput>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="7aebc970-47ab-402f-901c-9f621b4b0767" start_index="0" end="9edfb0b5-d85c-4254-aa4f-2ed324387977" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b7894b26-2a80-4da6-bdd6-def7279f2097" start_index="0" end="7aebc970-47ab-402f-901c-9f621b4b0767" end_index="6" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d0c6e792-6c24-4c03-844f-23ac008793b7" start_index="0" end="7aebc970-47ab-402f-901c-9f621b4b0767" end_index="7" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bed8de9f-76cd-4d57-b15e-37ce4c3e97f9" start_index="0" end="7aebc970-47ab-402f-901c-9f621b4b0767" end_index="8" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="be1785da-5508-4c02-b9bc-c047d0a33357" start_index="0" end="b7894b26-2a80-4da6-bdd6-def7279f2097" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="c76841ee-5c69-457b-9b4e-400b032be590" start_index="0" end="d0c6e792-6c24-4c03-844f-23ac008793b7" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0160f66e-cb9f-4e1e-9f03-5f51be72912b" start_index="0" end="d0c6e792-6c24-4c03-844f-23ac008793b7" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d1412a82-c0c1-4842-9341-ac99d5464f96" start_index="0" end="d0c6e792-6c24-4c03-844f-23ac008793b7" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e593272b-ce75-4a52-b3f3-052b672e3a9a" start_index="0" end="d0c6e792-6c24-4c03-844f-23ac008793b7" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="84673a26-1cd1-4179-9fef-0e27614df4a2" start_index="0" end="d0c6e792-6c24-4c03-844f-23ac008793b7" end_index="4" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b065dd0e-f8fc-4923-9a02-8f7eafb7cf69" start_index="0" end="7aebc970-47ab-402f-901c-9f621b4b0767" end_index="9" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="83492656-6f38-48ea-b466-70bb35a34e7a" start_index="0" end="bed8de9f-76cd-4d57-b15e-37ce4c3e97f9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="83492656-6f38-48ea-b466-70bb35a34e7a" start_index="0" end="cc159653-f763-4e24-8d64-058fd478f835" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b4e127cf-d971-43a3-9130-3394b163d540" start_index="0" end="bed8de9f-76cd-4d57-b15e-37ce4c3e97f9" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7407670b-364f-4665-933c-9b5b43654d3d" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8c020dd9-d24b-4a99-84b6-d2c298647738" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="2811c57f-5721-4129-abc4-439ef2620af0" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="4" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="295fe101-5947-49b1-9a5f-f4849e3d4b0d" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="785c9e5e-c480-4536-abcf-52a4237b3407" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f65b5b6c-45e0-4f69-8cc4-53d998a0f2f9" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="5" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cb0b008b-ed5c-4577-9fbd-2debc15a9ca4" start_index="0" end="f65b5b6c-45e0-4f69-8cc4-53d998a0f2f9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a583279b-24b2-4a6b-b784-95214066c445" start_index="0" end="cb0b008b-ed5c-4577-9fbd-2debc15a9ca4" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a25f9074-93d0-4c48-b4d2-ab85122936c5" start_index="0" end="83492656-6f38-48ea-b466-70bb35a34e7a" end_index="6" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="0986d0d6-44bd-47d7-ab5f-2c059571585d" annotationText="Write HTML" left="3384.06965049406" top="1394.11453038384" width="323" height="373" fontSize="30" InitialTop="1440.11453038384" InitialHeight="357" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="7aebc970-47ab-402f-901c-9f621b4b0767" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="c008a478-a153-4767-b955-60ceeeb80c9d" annotationText="Set external javascript" left="2539.43669432494" top="1498.13960288104" width="572.60232053895" height="510.456490374454" fontSize="18" InitialTop="1529.63960288104" InitialHeight="508.956490374454" TextblockHeight="21.5" backgrouund="#FFC1D676">
+      <Models ModelGuid="d0c6e792-6c24-4c03-844f-23ac008793b7" />
+      <Models ModelGuid="c76841ee-5c69-457b-9b4e-400b032be590" />
+      <Models ModelGuid="0160f66e-cb9f-4e1e-9f03-5f51be72912b" />
+      <Models ModelGuid="d1412a82-c0c1-4842-9341-ac99d5464f96" />
+      <Models ModelGuid="e593272b-ce75-4a52-b3f3-052b672e3a9a" />
+      <Models ModelGuid="84673a26-1cd1-4179-9fef-0e27614df4a2" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="19e351fa-c497-436a-ad8b-6bfa66d231a3" annotationText="Set external CSS" left="2732.73205308411" top="1330.63996271905" width="382.01645360607" height="147" fontSize="18" InitialTop="1362.13996271905" InitialHeight="145.5" TextblockHeight="21.5" backgrouund="#FFC1D676">
+      <Models ModelGuid="be1785da-5508-4c02-b9bc-c047d0a33357" />
+      <Models ModelGuid="b7894b26-2a80-4da6-bdd6-def7279f2097" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
