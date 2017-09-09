@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Dynamo Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/excel-bootstrap-table-filter-style.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+
+
+</head>
+<body>
+<div class="container-fixed">
+<h1>List of Sheets</h1> <table class="table table-striped">
+<thead>
+<tr>
+<th class="filter">Element Id</th>
+<th class="filter">Sheet Number</th>
+<th class="filter">Sheet Name</th>
+<th class="filter">Drawn By</th>
+</tr>
+</thead>
+<tbody>
+<tr> 
+	<td>936246</td> 
+	<td>MMH101</td> 
+	<td>Level 1 Plans</td> 
+	<td>R.K.</td> 
+</tr> 
+<tr> 
+	<td>937014</td> 
+	<td>MMH102</td> 
+	<td>Level 2 Plans</td> 
+	<td>R.K.</td> 
+</tr> 
+<tr> 
+	<td>937028</td> 
+	<td>MMH501</td> 
+	<td>Typical Installation Details</td> 
+	<td>R.K.</td> 
+</tr> 
+<tr> 
+	<td>937042</td> 
+	<td>MMH601</td> 
+	<td>HVAC Items - Schedules</td> 
+	<td>R.K.</td> 
+</tr> 
+<tr> 
+	<td>1005028</td> 
+	<td>MMH103</td> 
+	<td>Roof Plan</td> 
+	<td>R.K.</td> 
+</tr> 
+</tbody></table>
+   <script>
+    // Use the plugin once the DOM has been loaded.
+    $(function () {
+      // Apply the plugin 
+      $('.table').excelTableFilter();
+    });
+  </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<Workspace Version="1.3.1.1736" X="-557.653341026902" Y="-226.035542654786" zoom="1.01391179286009" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="8df64328-26ce-4de5-8221-27a65ec5ae6d" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Export.SQLite.ParameterData.TimeStamped" x="2952.47239140486" y="-347.587387618539" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <ID value="b47d309a-c2ee-470a-8592-6ca6c3de2ab5" />
+      <Name value="Export.SQLite.ParameterData.TimeStamped" />
+      <Description value="Exports all parameter data from a given category to a SQLite database with a timestamped table. Useful for charting elements over time or comparing changes." />
+      <Inputs>
+        <Input value="category" />
+        <Input value="databaseFilePath" />
+      </Inputs>
+      <Outputs>
+        <Output value="exportSuccesful" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.Categories guid="8022550a-bdc6-4b2d-9359-7aa252e019f5" type="DSRevitNodesUI.Categories" nickname="Categories" x="570.726525802054" y="489.255105621499" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="166:DuctCurves" />
+    <CoreNodeModels.Input.Filename guid="089f84f6-75cc-4a97-998d-15d2b80e632c" type="CoreNodeModels.Input.Filename" nickname="File Path" x="560.581457854625" y="592.689158554225" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>..\..\..\..\..\..\Amazon Drive\Business\BIM Extension\Test Projects\Praire Sky East Dormitory\Working\DB\Mech.db</System.String>
+      <HintPath>C:\Users\J. Merlan\Amazon Drive\Business\BIM Extension\Test Projects\Praire Sky East Dormitory\Working\DB\Mech.db</HintPath>
+    </CoreNodeModels.Input.Filename>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="5308b0bc-648a-4e19-b8b5-d8dbb8983ac2" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Export.SQLite.ParameterData.TimeStamped" x="787.871961573024" y="512.540614249776" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <ID value="b47d309a-c2ee-470a-8592-6ca6c3de2ab5" />
+      <Name value="Export.SQLite.ParameterData.TimeStamped" />
+      <Description value="Exports all parameter data from a given category to a SQLite database with a timestamped table. Useful for charting elements over time or comparing changes." />
+      <Inputs>
+        <Input value="category" />
+        <Input value="databaseFilePath" />
+      </Inputs>
+      <Outputs>
+        <Output value="exportSuccesful" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="8022550a-bdc6-4b2d-9359-7aa252e019f5" start_index="0" end="5308b0bc-648a-4e19-b8b5-d8dbb8983ac2" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="089f84f6-75cc-4a97-998d-15d2b80e632c" start_index="0" end="5308b0bc-648a-4e19-b8b5-d8dbb8983ac2" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="f83da904-06eb-4724-9414-c1a80e087ed8" annotationText="Package: BIMxDB" left="777.871961573024" top="482.540614249776" width="339.5" height="149" fontSize="14" InitialTop="512.540614249776" InitialHeight="149" TextblockHeight="20" backgrouund="#FFFFAA45">
+      <Models ModelGuid="5308b0bc-648a-4e19-b8b5-d8dbb8983ac2" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
